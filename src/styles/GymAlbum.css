@@ -1,0 +1,20 @@
+.gymAlbum--container {
+    padding:1rem;
+    max-width:1200px;
+    margin-inline:auto;
+}
+
+.gymAlbum--container img {
+    box-shadow: var(--bs-1);
+    width:100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+
+@media (min-width:1024px) {
+    .gymAlbum--container {
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap:1em;
+    }
+}
